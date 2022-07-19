@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="https://kit.fontawesome.com/f1d03125cf.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name ="viewport"content="width=device-width">
+        <meta name ="description"content="affordable and Professional Web design ">
+        <meta name ="keywords"content="Responsive well built websites by professinals">
+        <meta name ="Author"content="Nelson">
+        <title>Nelly Web design |   Welcome</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+     <header>
+         <div class="container">
+             <div id ="branding">
+                <img src="images/logo.jpg" alt="" width="8%">
+             </div>
+             <h1 class="header">Nelstar Insurance <span>Agency</span></h1>
+             <nav>
+                 <ul>
+                     <li class="current"><a href="index.html">Home</a></li>
+                     <li><a href="About.html">About</a></li>
+                     <li><a href="Services.html">services</a></li>
+                 </ul>
+             </nav>
+         </div>
+     </header>
+  <!--- <section id="showcase">
+         <img src="images/pexels-christina-morillo-1181516.jpg" width="20%">
+         <div class ="container">
+             <div class="container-1">
+             <div id="text">
+                 <h1 >Providing Affordable Insurance Services</h1>
+                 <p>
+                    When lives and limbs are at stake, time is everything. <br>
+                     That’s why A Nelstar alliance of dedicated emergency <br>
+                     medical transport partners stands ready to help in critical situations. <br>
+                 </p>
+             </div>
+             </div>
+         </div>
+     </section>--> 
+     <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./images/pexels-cottonbro-4553180.jpg" style="width:100%">
+          
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./images/pexels-david-henry-8540603.jpg" style="width:100%">
+         
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./images/pexels-pixabay-280076.jpg" style="width:100%">
+         
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+ 
+
+     <section id ="boxe">
+        <h1 class="boxe-title">About Our Services</h1>
+     <div class="container">
+         <div class ="box">
+            
+             <h2>Motor Insurance</h2>
+             <p>Vehicle insurance (also known as car insurance, 
+                motor insurance, or auto insurance) is insurance for cars, 
+                trucks, motorcycles, and other road vehicles.
+                 Its primary use is to provide financial protection
+                  against physical damage or bodily injury resulting
+                   from traffic collisions and against liability
+                 that could also arise from incidents in a vehicle. 
+                   </p>
+         </div>
+
+         <div class ="box">
+                <h2>Non-motor Insurance</h2>
+                <p>Events giving rise to the claim
+                    This may be an insured loss event,
+                     often provokes a discussion between
+                      the insured and insurer as to whether
+                     the event is a circumstance worthy of notification.
+                       </p>
+            </div>
+            <div class ="box">
+                
+                    <h2>Medical Insurance</h2>
+                    <p>
+                        Health insurance or medical insurance
+                         (also known as medical aid in South Africa) 
+                         is a type of insurance that covers the whole 
+                         or a part of the risk of a person incurring medical expenses.
+                         As with other types of insurance is risk among many individuals.   
+                    </p>
+                </div>
+
+     </div>
+    </section>
+        <div class="mission">
+            <h1 class="page-title">Mission</h1>
+            <h2>To provide and personalization and accountability in everything by delivering high standard of service to members</h2> 
+         </div>
+         
+         <div class="mission">
+            <h1 class="page-title">Vision</h1>
+            <h2>To provide reliable and efficient insurance services to client and members.</h2> 
+         </div>
+   
+
+     <div class="mission">
+        <h1 class="page-title">Core Values</h1>
+          <ul>
+            <div class="core">
+                <div class="">
+
+                </div>
+                <div>
+                    <li>Values</li>
+                    <li>Integrity</li>
+                    <li>Compassion</li>
+                    </div>
+                    <div>
+                        <li>Teamwork</li>
+                        <li>Professionalism</li>
+                        <li>Innovative</li>
+                    </div>
+            </div>
+          </ul>
+     </div>
+         <footer>
+             <p>HarmaTech Webdesign ,Copyright&copy;2022</p>
+         </footer>
+     </section> 
+    </body>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script> 
+</html>
